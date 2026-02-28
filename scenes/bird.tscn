@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://k714kfm35gg"]
+
+[ext_resource type="Texture2D" uid="uid://deqlkufadxwug" path="res://assets/bird1.png" id="1_7n575"]
+[ext_resource type="Script" path="res://scenes/bird.gd" id="1_o1o6f"]
+[ext_resource type="Texture2D" uid="uid://cryy0e545i2nc" path="res://assets/bird2.png" id="2_osmrb"]
+[ext_resource type="Texture2D" uid="uid://q5uv0cw7qmhv" path="res://assets/bird3.png" id="3_ox0ff"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tcg5o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7n575")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_osmrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ox0ff")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fus0s"]
+radius = 16.0
+height = 40.0
+
+[node name="Bird" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+collision_mask = 6
+script = ExtResource("1_o1o6f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tcg5o")
+animation = &"fly"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_fus0s")
