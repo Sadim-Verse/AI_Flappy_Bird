@@ -79,7 +79,6 @@ These are normalized by screen/viewport size before being passed to the network.
 
 **Fitness:** birds gain fitness by surviving: fitness += delta while alive and flying. Passing pipes increments the global score in main.gd, but it does not currently add extra fitness to the bird.
 
-> 📝 *Adjust the inputs, outputs, and fitness description above to match your implementation.*
 
 ## Project Structure
 
