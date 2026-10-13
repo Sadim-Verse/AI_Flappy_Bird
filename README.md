@@ -181,7 +181,7 @@ _Add your findings here. Useful things to include:_
 
 | Metric                                   | Value |
 | ---------------------------------------- | ----- |
-| Generations to first pipe cleared        | 1 |
+| Generations to first pipe cleared        | 2-3 |
 | Generations to a consistently surviving bird | 3-50+ |
 | Best score achieved                      | 459.5333+ |
 
