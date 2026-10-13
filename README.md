@@ -172,13 +172,6 @@ For a web build, serve the exported files over HTTP (for example with `python -m
 
 ## Results
 
-_Add your findings here. Useful things to include:_
-
-- Average number of generations until a bird first clears 10, 50, and 100 pipes
-- A fitness-over-generations chart
-- A screenshot of the best evolved network topology
-- A short GIF of a trained bird playing
-
 | Metric                                   | Value |
 | ---------------------------------------- | ----- |
 | Generations to first pipe cleared        | 2-3 |
